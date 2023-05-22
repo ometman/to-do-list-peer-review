@@ -343,8 +343,7 @@
     "yallist": "^3.1.1",
     "yaml": "^1.10.2",
     "yargs-parser": "^20.2.9",
-    "zwitch": "^1.0.5",
-    "homepage": "https://ometman.github.io/to-do-list"
+    "zwitch": "^1.0.5"
   },
   "scripts": {
     "deploy": "gh-pages -d dist",
@@ -362,5 +361,5 @@
   "bugs": {
     "url": "https://github.com/ometman/to-do-list/issues"
   },
-  "homepage": "https://ometman.github.io/to-do-list/"
+  "homepage": "https://github.com/ometman/to-do-list.git"
 }
