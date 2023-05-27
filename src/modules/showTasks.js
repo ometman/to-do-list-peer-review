@@ -6,4 +6,5 @@ const displayTasks = () => {
     showTasks.displayAllTasks();
   }
 };
-export default displayTasks;
+
+export { displayTasks as default };

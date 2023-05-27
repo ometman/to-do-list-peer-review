@@ -1,4 +1,4 @@
-import { displayTasks } from './showTasks.js';
+import displayTasks from './showTasks.js';
 import { TasksClass } from './tasksClass.js';
 
 const removeTask = (btnIndex) => {

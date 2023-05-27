@@ -2,11 +2,9 @@ import { TasksClass } from './tasksClass.js';
 
 // clear all completed
 const clearComplete = () => {
-  //  get the elements
   const clearCompletedBtn = document.querySelector('#clear-complete');
   const taskBoxEls = document.querySelectorAll('.task-select-input');
   const taskStatus = new TasksClass();
-  // get index and checkbox value by iterating to remove
   clearCompletedBtn.addEventListener('click', () => {
     taskBoxEls.forEach((theEl, theElIndex) => {
       if (theEl.checked === true) {

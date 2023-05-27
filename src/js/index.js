@@ -5,14 +5,14 @@ import '../scss/styles.scss';
 import * as bootstrap from 'bootstrap';
 
 // import { TasksClass } from '../modules/tasksClass.js'
-import { displayTasks } from '../modules/showTasks.js';
-import { addNewTask } from '../modules/addTask.js';
-import { removeTask } from '../modules/removeTask.js';
-import { changeIcon } from '../modules/changeIcon.js';
-import { editTask } from '../modules/editTask.js';
-import { markComplete } from '../modules/markCompleted.js';
-import { clearComplete } from '../modules/clearCompleted.js';
-import { retainCheck } from '../modules/taskStatus.js';
+import displayTasks from '../modules/showTasks.js';
+import addNewTask from '../modules/addTask.js';
+import removeTask from '../modules/removeTask.js';
+import changeIcon from '../modules/changeIcon.js';
+import editTask from '../modules/editTask.js';
+import markComplete from '../modules/markCompleted.js';
+import clearComplete from '../modules/clearCompleted.js';
+import retainCheck from '../modules/taskStatus.js';
 
 window.onload = () => {
   // refresh page by refresh icon btn

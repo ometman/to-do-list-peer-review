@@ -1,6 +1,6 @@
 import { TasksClass } from './tasksClass.js';
-import { displayTasks } from './showTasks.js';
-import { retainCheck } from './taskStatus.js';
+import displayTasks from './showTasks.js';
+import retainCheck from './taskStatus.js';
 
 // add new task by click event
 const addNewTask = () => {

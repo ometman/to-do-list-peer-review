@@ -1,7 +1,7 @@
 import { TasksClass } from './tasksClass.js';
 
 // edit new task by click event
-export const editTask = () => {
+const editTask = () => {
   const editElement = document.querySelectorAll('.task-text');
   const editTask = new TasksClass();
   editElement.forEach((el, elIndex) => {
