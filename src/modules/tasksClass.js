@@ -12,8 +12,6 @@ export class TasksClass {
 
   isEmptyCollection = () => this.taskCount === 0;
 
-  //  add task method: declaring the object variables and assign the values to them
-  //  the task class is assigned as an object property of the class. Do page reload after adding.
   addATask = (taskText) => {
     const tC = this.taskCollection;
     const theIndex = tC.length + 1;
@@ -26,15 +24,12 @@ export class TasksClass {
 
   displayAllTasks = () => {
     const tC = this.taskCollection;
-    // get the task container for iteration and declare it empty
     const taskContainer = document.querySelector('#task-container');
     taskContainer.innerHTML = '';
-    // now start loop - prevents duplication and single content scenio
     tC.forEach((tcTask, tcTaskIndex) => {
       const displayContainer = document.createElement('div');
       displayContainer.classList = 'display-container, row px-2 ms-0 me-0';
       const i = tcTaskIndex;
-      // displayContainer.id = i + 1;
       displayContainer.innerHTML = ` 
       <!--check input col-->
       <div class="col-1">
@@ -56,11 +51,8 @@ export class TasksClass {
 
   taskRemover = (btnIndex) => {
     const tC = this.taskCollection;
-    // remove by splicing
     tC.splice(btnIndex, 1);
-    // rearrange by sorting using their index
     tC.sort((task1, task2) => task1.taskIndex - task2.taskIndex);
-    // reassign task index by iterations
     tC.forEach((taskItem, taskItemIndex) => {
       taskItem.taskIndex = taskItemIndex + 1;
     });
@@ -81,11 +73,8 @@ export class TasksClass {
 
   clearCompletedTask = (theElIndex) => {
     const tC = this.taskCollection;
-    // tC.filter((task) => task.taskCompletion === false);
     tC.splice(theElIndex, 1);
-    // rearrange by sorting using their index
     tC.sort((task1, task2) => task1.taskIndex - task2.taskIndex);
-    // reassign task index by iterations
     tC.forEach((taskItem, taskItemIndex) => {
       taskItem.taskIndex = taskItemIndex + 1;
     });

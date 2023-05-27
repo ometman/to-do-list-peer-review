@@ -1,7 +1,7 @@
 import { TasksClass } from './tasksClass.js';
 
 // clear all completed
-export const clearComplete = () => {
+const clearComplete = () => {
   //  get the elements
   const clearCompletedBtn = document.querySelector('#clear-complete');
   const taskBoxEls = document.querySelectorAll('.task-select-input');
